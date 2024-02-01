@@ -1,0 +1,328 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face { font-family: Gotham; src: url('./assets/Gotham-Font/GothamBook.ttf'); } 
+@font-face { font-family: Gotham; font-weight: bold; src: url('./assets/Gotham-Font/GothamBold.ttf');}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/bg1.jpg'); /* Replace 'your-background-image.jpg' with the path to your image */
+  background-color: rgba(0, 0, 0, 1);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Gotham; /* Choose an appropriate font */
+  color: #fff;
+  overflow-y: auto;
+  background-repeat: repeat-y;
+}
+
+.content {
+  text-align: center;
+  /* Add more styles as needed */
+}
+
+a {
+  color: #c00;
+}
+
+
+
+
+/* --------------------------------------------------------- */
+
+
+@media only screen and (max-width: 819px) {
+  /* Add your mobile styles here */
+
+  .desktop-content {
+      display: none; /* Hide content for desktop on mobile */
+  }
+
+  .mobile-text {  
+    position: center;
+    margin: auto;
+    max-width: 90vw; 
+    border-radius: 15px;
+    padding: 1vw;
+    font-size: 1.9vh; 
+    text-align: left;
+    margin-top: 2vh;
+    margin-left: 3vw;
+  }
+
+  .heading-1 {
+    font-size: 10vw;
+    margin: 0; 
+    padding: 0; 
+    margin-bottom: 1vh;
+    margin-left: 2vw;
+  }
+  
+  
+  .heading-2 {
+    font-size: 8vw; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+
+  p {
+    font-size: max(0.95vw, 14px);
+    line-height: 150%;
+    padding: 3vw;
+    border-radius: 12px;
+    background-color: #00000085;
+  }
+
+
+  ul {
+    font-size: max(4.5vw, 14px);
+    line-height: 200%;
+    padding: 1vw;
+    border-radius: 12px;
+    background-color: #00000085;
+  }
+  
+  
+  li {
+    line-height: 4vh;
+    margin-left: 5vw;
+    padding: 0.8vh;
+  }  
+
+
+  .mobile-buttons {  
+    position: center;
+    margin: auto;
+    max-width: 90vw; 
+    border-radius: 5px;
+    padding: 1vw; 
+    text-align: center;
+  }
+
+  
+  .button {
+    margin: auto;
+    width: 80vw;
+    color:#fff;
+    font-size: 2.5vh;
+    line-height: 4.5vh;
+    background-color: #c00; 
+    padding: 1vw;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+  }
+
+
+  .button a {
+    color: #fff; 
+    text-decoration: none;
+  }
+
+
+  img {
+    width: 85vw;
+  }
+
+
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------- */
+
+
+@media only screen and (min-width: 820px) {
+  /* Add your desktop styles here */
+
+  .mobile-content {
+      display: none; /* Hide content for mobile devices on desktop */
+  }
+
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+  }
+  
+  .column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: auto;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    text-align: center; 
+    position: relative;
+    height: 70vh;
+    max-width: 33vw;
+    margin-top: 10vh;
+  }
+  
+  
+  .headshot {
+    max-width: 20vw; 
+    border-radius: 12px;
+    margin: auto; 
+    -webkit-box-pack: center; 
+        -ms-flex-pack: center; 
+            justify-content: center; 
+    text-align: center;
+  }
+  
+  
+  .column-text {  
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 80%;
+  }
+  
+  
+  
+  .heading-1 {
+    font-size: 3vw;
+    margin: 0; 
+    padding: 0; 
+    margin-bottom: 2vh;
+  }
+  
+  
+  
+  .heading-2 {
+    font-size: 2vw; 
+    margin: 0; 
+    padding: 0; 
+  }
+
+  .heading-3 {
+    font-size: 1.5vw; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  
+  p {
+    font-size: max(0.95vw, 14px);
+    line-height: 150%;
+    padding: 1vw;
+    border-radius: 12px;
+    background-color: #00000085;
+  }
+  
+  
+  
+  ul {
+    font-size: max(0.95vw, 14px);
+    line-height: 150%;
+    padding: 1vw;
+    border-radius: 12px;
+    background-color: #00000085;
+  }
+  
+  
+  li {
+    line-height: 4vh;
+    margin-left:  1vw;
+  }  
+
+
+  .column2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    text-align: center; 
+    position: relative;
+    height: 20vh;
+    max-width: 33vw;
+  }
+
+
+  .button {
+    width: 20vw;
+    color:#fff;
+    font-weight: bold;
+    background-color: #c00; 
+    padding: 1vw;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    bottom: 50vh;
+  }
+
+
+  .button:hover {
+    width: 20vw;
+    background-color: #000; 
+    color: #c00;
+    font-weight: bold;
+    padding: 1vw;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    bottom: 50vh;
+    text-decoration: underline;
+  }
+
+  .button a {
+    color: #fff; 
+    text-decoration: none;
+  }
+
+
+  .simple-text{
+    margin: auto;
+    margin-left: 5vw;
+    margin-right: 0vw;
+    text-align: left; 
+    position: relative;
+    margin-top: 3vh;
+    max-width: 70vw;
+  }
+
+  .simple-text ul {
+    font-size: max(0.95vw, 14px);
+    line-height: 150%;
+    padding: 1vw;
+    border-radius: 12px;
+    background-color: #00000085;
+  }
+  
+  
+  .simple-text li {
+    line-height: 4vh;
+    margin-left:  1vw;
+    margin-bottom: 0vh;
+  }
+
+
+
+}
+
