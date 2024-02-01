@@ -11,8 +11,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('./assets/bg1.jpg'); /* Replace 'your-background-image.jpg' with the path to your image */
   background-color: rgba(0, 0, 0, 1);
+  background-image: url('./assets/bg1.jpg'); 
   background-size: cover;
   background-position: center;
   height: 100vh; /* Set the height to 100% of the viewport height */
